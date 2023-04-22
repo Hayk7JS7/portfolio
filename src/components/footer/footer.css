@@ -1,0 +1,14 @@
+.footer{
+    background-color: rgba(43, 40, 40, 0.2);
+    margin-top: 5rem;
+    font-size: 16px;
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ 
+ .footer-child{
+    height: 3rem;
+ }

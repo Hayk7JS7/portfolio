@@ -1,0 +1,62 @@
+.main-heading{
+    font-size: 2.5rem;
+    margin: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+ }
+ .main-child{
+    margin: 2rem;
+ }
+ 
+ .hi{
+    font-size: 2rem;
+ }
+ 
+ .typing-animation{
+    margin-top: 2rem;
+ }
+
+ /* animation */
+ .waving {
+    animation: wave 2s ease-in-out infinite;
+  }
+ 
+.img-wv{
+    margin-left: 0.5rem;
+ }
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(-8deg);
+    }
+    60% {
+      transform: rotate(7deg);
+    }
+    70% {
+      transform: rotate(-6deg);
+    }
+    80% {
+      transform: rotate(5deg);
+    }
+    90% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

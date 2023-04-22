@@ -1,0 +1,66 @@
+.aboutMeSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.aboutMe{
+    display: flex;
+    gap: 8rem;
+    width: clamp(80rem, 65vw, 90rem);
+}
+
+.aboutMeImagePart{
+    display: flex;
+    position: relative;
+}
+
+.aboutMeImagePart img{
+    height: clamp(50vh, 100%, 60vh);
+}
+
+.aboutMeImagePart::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: clamp(25vh, 50%, 30vh);
+    z-index: -1;
+    background-size: 1.5rem 1.5rem;
+    background-image:
+        radial-gradient(
+            white 30%,
+            transparent 30%
+        )
+}
+
+.aboutMeImagePart::after{
+    content: '';
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 0;
+    right: 0;
+    width: 50%;    
+    height: clamp(25vh, 50%, 30vh);
+    z-index: -1;
+    background-size: 1.5rem 1.5rem;
+    background-image:
+        radial-gradient(
+            white 30%,
+            transparent 30%
+        )
+}
+
+.aboutMeInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.aboutMeInformation p{
+    margin: 3rem 0;
+}

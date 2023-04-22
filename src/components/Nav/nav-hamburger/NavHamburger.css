@@ -1,0 +1,79 @@
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .menu-icon .passive {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: whitesmoke;
+    transition: 0.5s;
+  }
+  .menu-icon .active {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: whitesmoke;
+    transition: 0.5s;
+  }
+  .menu-icon .active:first-child {
+    transform-origin: left center;
+    transform: rotate(42deg);
+  }
+  .menu-icon .active:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon .active:last-child {
+    transform-origin: left center;
+    transform: rotate(-42deg);
+  }
+  
+.burger-content{
+    display: flex;
+    flex-flow: row wrap;
+}  
+.burger-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-burg{
+    margin-right: 1rem;
+}
+
+.menu-burgs, .menu-burgContent{
+    display: flex;
+    align-items: center;
+}
+
+.menu-burgContent{
+    gap: 0.5rem;
+}
+
+.menu-burgContent p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.menu-burgContent img{
+    width: 1.5rem;
+}
+
+.line{
+    width: 0%;
+    height: 4px;
+    margin-top: 0.3rem;
+    background-color: #EA655E;
+    border-radius: 4px;
+    transition: 0.5s ease-in;
+}
+
+.menu-burg:hover .line{
+    width: 100%;
+}
